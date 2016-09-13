@@ -1,0 +1,54 @@
+aside {
+    background-color: #424242;
+    float: left;
+    width: 214px;
+    padding-bottom: 32767px;
+    margin-bottom: -32767px;
+    overflow: hidden;
+}
+
+aside > nav > ul {
+    margin-top: 0;
+}
+
+aside > nav > ul > li:first-child{
+    list-style-image: url(/_img/bookmark_bullet.png);
+    margin-top: 2px;
+}
+
+aside > nav > ul {
+    padding-left: 0;
+}
+
+aside > nav > ul > li{
+    padding: 10px 0 10px 16px;
+    list-style-position:inside;
+    border-top: 1px solid  #666;
+    list-style-image: url(/_img/tree_bullet.png);
+}
+
+
+aside > nav > ul > li > a {
+    font-family:'Oswald Regular', 'Myriad Pro', Arial, sans-serif;
+    color: #ffffff;
+    text-decoration: none;
+    text-transform: uppercase;
+}
+
+aside > nav > ul > li li {
+    list-style: none;
+}
+
+aside > nav > ul > li.selected + li {
+    border: 0;
+}
+
+aside > nav > ul > li.selected {
+    background-color: #212121;
+}
+
+aside > nav > ul > li li > a {
+    color: #ffffff;
+    opacity: 0.38;
+    text-decoration: none;
+}
