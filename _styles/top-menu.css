@@ -1,9 +1,6 @@
 body > header {
     position: relative;
     padding-bottom: 60px;
-}
-
-body > header {
     background-color: #3f51b5;
     min-width: 472px;
 }

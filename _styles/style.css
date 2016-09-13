@@ -1,11 +1,19 @@
 @import "left-menu.css";
 @import "top-menu.css";
 @import "content-box.css";
+@import "../_fonts/font-awesome-4.6.3/css/font-awesome.css";
 
-body{
+html {
+}
+
+body {
     margin: 0;
 }
 
-figure{
+figure {
     margin: 0;
+}
+
+a {
+    text-decoration: none;
 }

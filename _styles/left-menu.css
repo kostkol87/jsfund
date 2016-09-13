@@ -8,7 +8,16 @@ aside {
 }
 
 aside > nav > ul {
-    margin-top: 0;
+    margin: 0;
+    padding-left: 0;
+}
+
+aside > nav > ul > li{
+    text-transform: uppercase;
+}
+
+aside > nav > ul > li > ul{
+    text-transform: none;
 }
 
 aside > nav > ul > li:first-child{
@@ -16,39 +25,47 @@ aside > nav > ul > li:first-child{
     margin-top: 2px;
 }
 
+aside > nav > ul > li{
+    padding: 16px 0 16px 16px;
+    list-style-position:inside;
+    border-top: 1px solid  #666;
+    list-style-image: url(/_img/tree_bullet.png);
+    font-size: 16px;
+    font-family: 'Oswald Regular', 'Myriad Pro', Arial, sans-serif;
+}
+
 aside > nav > ul {
     padding-left: 0;
 }
 
-aside > nav > ul > li{
-    padding: 10px 0 10px 16px;
-    list-style-position:inside;
-    border-top: 1px solid  #666;
-    list-style-image: url(/_img/tree_bullet.png);
-}
-
-
 aside > nav > ul > li > a {
-    font-family:'Oswald Regular', 'Myriad Pro', Arial, sans-serif;
     color: #ffffff;
-    text-decoration: none;
-    text-transform: uppercase;
 }
-
-aside > nav > ul > li li {
-    list-style: none;
-}
-
-aside > nav > ul > li.selected + li {
-    border: 0;
-}
-
 aside > nav > ul > li.selected {
     background-color: #212121;
 }
 
+aside > nav > ul > li.selected + * {
+    border-top: 0;
+}
+
+aside > nav > ul > li li {
+    list-style: none;
+    background-color: #212121;
+}
+
 aside > nav > ul > li li > a {
-    color: #ffffff;
-    opacity: 0.38;
-    text-decoration: none;
+    color: #757575;
+}
+
+aside > nav > ul > li li.selected > a {
+    color: #fff;
+}
+
+aside > nav > ul li.expanded > a:after {
+    content: url(/_img/copy.png);
+    float: right;
+    position: relative;
+    top: -6px;
+    right: 19px;
 }

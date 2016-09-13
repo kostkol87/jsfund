@@ -1,5 +1,5 @@
 #toolbar,
-body > section{
+body > section {
     float: right;
-    margin-right:214px;
+    margin-left: 214px;
 }

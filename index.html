@@ -9,52 +9,51 @@
 <body>
 
 <header>
-
     <figure id="menuBtn"><img src="_img/menu_button.png " alt="Menu"></figure>
     <figure id="logo"><a href="/"><img src="_img/logo.png" alt="Indigo Logo"></a></figure>
 
 
-    <figure id="avatar"><img src="_img/_avatars/1.png" alt="..."></figure> <!--  insert avatar address  &  insert user's name -->
+    <figure id="avatar"><img src="_img/_avatars/1.png" alt="..."></figure>
+    <!--  insert avatar address  &  insert user's name -->
     <form id="search" action="http://google.com/search?q=" method="get">
         <input name="q" type="text" placeholder="Search">
         <img id="searchLogo" src="_img/search.png" alt="">
     </form>
-
 </header>
-
 
 <aside>
     <nav>
         <ul>
             <li><a href="bookmarks/1/">My bookmarks</a></li>
             <li><a href="projects/">All projects</a></li>
-            <li class="selected">
+            <li class="selected expanded">
                 <a href="projects/">IV Project</a>
                 <ul>
-                    <li><a href="projects/11112222/">11112222</a></li>
-                    <ul>
-                        <li>
-                            <a href="projects/11112222/Table">Table</a>
-                            <ul>
-                                <li><a class="selected" href="projects/11112222/Table/1/">0001</a></li>
-                                <li><a href="projects/11112222/Table/2/">0002</a></li>
-                                <li><a href="projects/11112222/Table/3/">0003</a></li>
-                                <li><a href="projects/11112222/Table/4/">0004</a></li>
-                                <li><a href="projects/11112222/Table/5/">0005</a></li>
-                                <li><a href="projects/11112222/Table/6/">0006</a></li>
-                            </ul>
-                        </li>
-                    </ul>
+                    <li>
+                        <a href="projects/11112222/">11112222</a>
+                        <ul>
+                            <li>
+                                <a href="projects/11112222/Table">Table</a>
+                                <ul>
+                                    <li class="open selected expanded"><a href="projects/111222/Table/1/">0001</a></li>
+                                    <li class="signing"><a href="projects/111222/Table/2/">0002</a></li>
+                                    <li class="completed"><a href="projects/111222/Table/3/">0003</a></li>
+                                    <li class="submitFail"><a href="projects/111222/Table/4/">0004</a></li>
+                                    <li class="archived"><a href="projects/111222/Table/5/">0005</a></li>
+                                    <li class="submitFail"><a href="projects/111222/Table/6/">0006</a></li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </li>
                 </ul>
             </li>
             <li><a href="projects/1/">My project</a></li>
             <li><a href="projects/new">New project</a></li>
         </ul>
     </nav>
-
 </aside>
 
-<nav id="Toolbar">
+<nav id="toolbar">
     <ul>
         <li>
             <ul><a href="#"><img src="_img/toolbar/up-arrow.gif" alt=""></a></ul>
