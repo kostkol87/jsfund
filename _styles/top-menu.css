@@ -38,12 +38,12 @@ body > header > #search {
 }
 
 #search > input {
+    float: right;
     width: 130px;
     max-width: 151px;
     min-width: 100px;;
     margin-top: 12px;
     padding-left: 41px;
-    padding-right: 0px;
     height: 32px;
     border: none;
     border-radius: 16px;
@@ -55,8 +55,8 @@ body > header > #search {
     position: relative;
     width: 16px;
     height: 15px;
-    top: 4px;
-    right: 155px;
+    top: 22px;
+    right: -36px;
 }
 
 #avatar {
