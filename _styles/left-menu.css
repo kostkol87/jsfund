@@ -12,12 +12,16 @@ aside > nav > ul {
     padding-left: 0;
 }
 
-aside > nav > ul > li{
-    text-transform: uppercase;
+aside > nav > ul > li li:last-child{
+    padding-bottom: 2px;
 }
 
 aside > nav > ul > li > ul{
     text-transform: none;
+}
+
+aside > nav > ul > li > ul > li > ul{
+    padding: 0;
 }
 
 aside > nav > ul > li:first-child{
@@ -43,13 +47,30 @@ aside > nav > ul > li > a {
 }
 aside > nav > ul > li.selected {
     background-color: #212121;
+    padding-bottom: 0;
 }
-
 aside > nav > ul > li.selected + * {
     border-top: 0;
 }
 
+aside > nav > ul > li > ul{
+    padding-left: 0;
+}
+
+aside > nav > ul > li > ul > li > a{
+    padding-left: 30px;
+}
+
+aside > nav > ul > li > ul > li > ul{
+    padding-left: 45px;
+}
+
+aside > nav > ul > li > ul > li > ul > li > ul{
+    padding-left: 15px;
+}
+
 aside > nav > ul > li li {
+    padding: 16px 0 16px 0;
     list-style: none;
     background-color: #212121;
 }
