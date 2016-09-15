@@ -9,7 +9,7 @@ var browserSync = require('browser-sync');
 
 gulp.task('browser-sync', function() {
     browserSync({
-        files: "*",
+        files: ["_css/**/*.css", "*", "*/*.*", "_img/**/*.*", "_scripts/**/*.*"],
         server: {
             baseDir: "./" // Change this to your web root dir
         }

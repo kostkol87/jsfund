@@ -1,0 +1,35 @@
+#toolbox {
+    height: 40px;
+    padding-top: 0;
+    background-color: #ededed;
+}
+
+#toolbox > ul {
+    height: 40px;
+    margin: 0;
+}
+
+#toolbox > ul > li{
+    display: inline-block;
+}
+
+/*#toolbox > ul > li :last-child{*/
+    /*margin-right: 40px;*/
+/*}*/
+
+#toolbox > ul > li > ul {
+    padding: 0;
+    display: inline-block;
+    width: 40px;
+    height: 40px;
+    border-right: 1px solid #d1d0d0;
+}
+
+
+#up-arrow:before {
+    content: '\f01b';
+    font-family: FontAwesome;
+    color: #424242;
+    opacity: 0.8;
+    font-size: 18px;
+}

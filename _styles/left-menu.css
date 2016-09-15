@@ -12,28 +12,45 @@ aside > nav > ul {
     padding-left: 0;
 }
 
-aside > nav > ul > li li:last-child{
+aside > nav > ul > li li:last-child {
     padding-bottom: 2px;
 }
 
-aside > nav > ul > li > ul{
+aside > nav > ul > li > ul {
     text-transform: none;
 }
 
-aside > nav > ul > li > ul > li > ul{
-    padding: 0;
+aside > nav > ul > li > ul > li > ul {
+    padding-top: 16px;
+    /*padding: 0;*/
 }
 
-aside > nav > ul > li:first-child{
-    list-style-image: url(/_img/bookmark_bullet.png);
+aside > nav > ul > li:first-child {
+    list-style: none;
     margin-top: 2px;
 }
 
-aside > nav > ul > li{
+aside > nav > ul > li:first-child:before {
+    content: '\f02e';
+    color: #e0e0e0;
+    font-family: FontAwesome, serif;
+    font-size: 14px;
+    padding-right: 12px;
+}
+
+aside > nav > ul > li:before {
+    content: '\f0e8';
+    color: #e0e0e0;
+    font-family: FontAwesome, serif;
+    font-size: 14px;
+    padding-right: 12px;
+}
+
+aside > nav > ul > li {
+    list-style: none;
     padding: 16px 0 16px 16px;
-    list-style-position:inside;
-    border-top: 1px solid  #666;
-    list-style-image: url(/_img/tree_bullet.png);
+    list-style-position: inside;
+    border-top: 1px solid #666;
     font-size: 16px;
     font-family: 'Oswald Regular', 'Myriad Pro', Arial, sans-serif;
 }
@@ -44,35 +61,95 @@ aside > nav > ul {
 
 aside > nav > ul > li > a {
     color: #ffffff;
+    opacity: 0.38;
 }
+
 aside > nav > ul > li.selected {
+    border: none;
     background-color: #212121;
     padding-bottom: 0;
 }
+
 aside > nav > ul > li.selected + * {
     border-top: 0;
 }
 
-aside > nav > ul > li > ul{
+aside > nav > ul > li > ul {
     padding-left: 0;
 }
 
-aside > nav > ul > li > ul > li > a{
+aside > nav > ul > li > ul > li > a {
     padding-left: 30px;
 }
 
-aside > nav > ul > li > ul > li > ul{
+aside > nav > ul > li > ul > li > ul {
     padding-left: 45px;
 }
 
-aside > nav > ul > li > ul > li > ul > li > ul{
+aside > nav > ul > li > ul > li > ul > li > ul {
+    padding-top:16px;
     padding-left: 15px;
 }
 
 aside > nav > ul > li li {
-    padding: 16px 0 16px 0;
     list-style: none;
+    padding: 16px 0 16px 0;
     background-color: #212121;
+}
+
+aside > nav > ul > li li.open.selected:after{
+    color: #e0e0e0;
+    opacity:1;
+}
+
+aside > nav > ul > li li.open:after{
+    float: right;
+    padding-right: 17px;
+    content: '\f10c';
+    font-family: FontAwesome;
+    font-size: 14px;
+    color: #e0e0e0;
+    opacity:0.38
+}
+
+aside > nav > ul > li li.signing:after{
+    float: right;
+    padding-right: 17px;
+    content: '\f084';
+    font-family: FontAwesome;
+    font-size: 14px;
+    color: white;
+    opacity:0.38;
+}
+
+aside > nav > ul > li li.completed:after{
+    float: right;
+    padding-right: 17px;
+    content: '\f00c';
+    font-family: FontAwesome;
+    font-size: 14px;
+    color: white;
+    opacity:0.38;
+}
+
+aside > nav > ul > li li.submitFail:after{
+    float: right;
+    padding-right: 17px;
+    content: '\f00d';
+    font-family: FontAwesome;
+    font-size: 14px;
+    color: white;
+    opacity:0.38;
+}
+
+aside > nav > ul > li li.archived:after{
+    float: right;
+    padding-right: 17px;
+    content: '\f187';
+    font-family: FontAwesome;
+    font-size: 14px;
+    color: white;
+    opacity:0.38;
 }
 
 aside > nav > ul > li li > a {
@@ -83,8 +160,18 @@ aside > nav > ul > li li.selected > a {
     color: #fff;
 }
 
+aside > nav > ul > li:last-child {
+    border-bottom: 1px solid #666;
+}
+
+aside > nav > ul > li:first-child {
+    border-bottom: none;
+}
+
 aside > nav > ul li.expanded > a:after {
-    content: url(/_img/copy.png);
+    content: '\f106';
+    font-family: FontAwesome;
+    font-size: 14px;
     float: right;
     position: relative;
     top: -6px;
