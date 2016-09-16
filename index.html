@@ -78,132 +78,139 @@
     </ul>
 </nav>
 
-<div>
-    <h1 id="templates">Templates</h1><!--
-    --> <h1 id="newTemplate" class="selected">New Templates</h1>
-</div>
 
-<section>
-    <section>
-        <!--todo make content-->
-    </section>
-    <section >
-        <h1>New template</h1>
-        <form action="/search/" method="get">
-            <input name="filter" type="text" placeholder="Name">
-        </form>
-        <article>
-            <ul>
-                <li>
-                    <form action="/filter/" method="get">
-                        <input name="criteria" type="text" placeholder="Search by name or desription">
-                    </form>
-                </li>
-                <li>
-                    <h1>Concept Details</h1>
-                    <p>Description</p>
-                </li>
-                <li>
-                    <h1>Reaction Details</h1>
-                    <p>Description</p>
-                </li>
-                <li>
-                    <h1>Product Batch Summary</h1>
-                    <p>Description</p>
-                </li>
-                <li>
-                    <h1>Product Batch Details</h1>
-                    <p>Description</p>
-                </li>
-                <li>
-                    <h1>Reaction Scheme</h1>
-                    <p>Description</p>
-                </li>
-                <li> <!--todo fill the list-->
-                    <h1>...</h1>
-                    <p>Description</p>
-                </li>
-            </ul>
-        </article>
-        <article>
-            <header>
-                <h1>Template Builder</h1>
-                <button>create new tab</button>
-            </header>
-            <ul id="tabs">
-                <li>
-                    Experimantal
-                    <ul>
-                        <li>
-                            <h1>Ration Details</h1>
-                            <p>Description</p>
-                        </li>
-                        <li>
-                            <h1>Raction Scheme</h1>
-                            <p>Description</p>
-                        </li>
-                        <li>
-                            <h1>Stoichenometry Table</h1>
-                            <p>Description</p>
-                        </li>
-                    </ul>
-                    Batches
-                    <ul>
-                        <li>
-                            <h1>Concept Details</h1>
-                            <p>Description</p>
-                        </li>
-                        <li>
-                            <h1>Product Batch Details</h1>
-                            <p>Description</p>
-                        </li>
-                        <li>
-                            <h1>...</h1>
-                            <p>Description</p>
-                        </li>
-                    </ul>
-                </li>
-                <li>
+<section class="tabs-widget">
+    <!--TABS HEADS-->
+    <div>
+        <a href="#tab-1-1" id="templates">Templates</a>
+        <a href="#tab-1-2" id="newTemplate" class="">New Templates</a>
+    </div>
 
-                </li>
+    <!--TABS-->
+    <div class="content">
+        <div id="tab-1-1" class="scroller"></div>
+        <section class="item">
+            ....
+        </section>
+        <!--TABS-->
+        <div id="tab-1-2" class="scroller"></div>
+        <section class="item -default">
+            <form action="/search/" method="get">
+                <input name="filter" type="text" placeholder="Name">
+            </form>
 
-            </ul>
-        </article>
-        <section>
-            <header>
-                <h1>Show preview</h1>
-            </header>
+            <article class="">
+                <ul>
+                    <li>
+                        <form action="/filter/" method="get">
+                            <input name="criteria" type="text" placeholder="Search by name or desription">
+                        </form>
+                    </li>
+                    <li>
+                        <h1>Concept Details</h1>
+                        <p>Description</p>
+                    </li>
+                    <li>
+                        <h1>Reaction Details</h1>
+                        <p>Description</p>
+                    </li>
+                    <li>
+                        <h1>Product Batch Summary</h1>
+                        <p>Description</p>
+                    </li>
+                    <li>
+                        <h1>Product Batch Details</h1>
+                        <p>Description</p>
+                    </li>
+                    <li>
+                        <h1>Reaction Scheme</h1>
+                        <p>Description</p>
+                    </li>
+                    <li> <!--todo fill the list-->
+                        <h1>...</h1>
+                        <p>Description</p>
+                    </li>
+                </ul>
+            </article>
+            <article>
+                <header>
+                    <h1>Template Builder</h1>
+                    <button>create new tab</button>
+                </header>
+                <ul id="tabs">
+                    <li>
+                        Experimantal
+                        <ul>
+                            <li>
+                                <h1>Ration Details</h1>
+                                <p>Description</p>
+                            </li>
+                            <li>
+                                <h1>Raction Scheme</h1>
+                                <p>Description</p>
+                            </li>
+                            <li>
+                                <h1>Stoichenometry Table</h1>
+                                <p>Description</p>
+                            </li>
+                        </ul>
+                        Batches
+                        <ul>
+                            <li>
+                                <h1>Concept Details</h1>
+                                <p>Description</p>
+                            </li>
+                            <li>
+                                <h1>Product Batch Details</h1>
+                                <p>Description</p>
+                            </li>
+                            <li>
+                                <h1>...</h1>
+                                <p>Description</p>
+                            </li>
+                        </ul>
+                    </li>
+                    <li>
 
+                    </li>
+
+                </ul>
+            </article>
             <section>
-                <header><h1>Experimental</h1></header>
-                <article>
-                    <header><h1>Raction Details</h1></header>
-                    <form>
-                        <label for="experim-subj-title">Experimantal Subject/title</label>
-                        <input id="experim-subj-title" type="text">
+                <header>
+                    <h1>Show preview</h1>
+                </header>
 
-                        <label for="therapeutic-area">Therapeutic Area</label>
-                        <input id="therapeutic-area" type="text">
+                <section>
+                    <header><h1>Experimental</h1></header>
+                    <article>
+                        <header><h1>Raction Details</h1></header>
+                        <form>
+                            <label for="experim-subj-title">Experimantal Subject/title</label>
+                            <input id="experim-subj-title" type="text">
 
-                        <label for="project-code-name">Project Code &amp; Name</label>
-                        <input id="project-code-name" type="text">
+                            <label for="therapeutic-area">Therapeutic Area</label>
+                            <input id="therapeutic-area" type="text">
 
-                        <label for="batch-creator">Batch creator</label>
-                        <input id="batch-creator" type="text">
-                    </form>
-                </article>
-                <article><h1>Reaction Scheme</h1></article>
-                <article><h1>Stoichiometry Table</h1></article>
-            </section>
-            <section>
-                <header><h1>Batches</h1></header>
+                            <label for="project-code-name">Project Code &amp; Name</label>
+                            <input id="project-code-name" type="text">
 
+                            <label for="batch-creator">Batch creator</label>
+                            <input id="batch-creator" type="text">
+                        </form>
+                    </article>
+                    <article><h1>Reaction Scheme</h1></article>
+                    <article><h1>Stoichiometry Table</h1></article>
+                </section>
+                <section>
+                    <header><h1>Batches</h1></header>
+
+                </section>
             </section>
         </section>
-    </section>
+    </div>
 
 </section>
-
 
 <!--<footer>-->
 

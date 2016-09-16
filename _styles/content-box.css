@@ -1,4 +1,4 @@
-body > div {
+body > section > div {
     display: flex;
     border-bottom: 1px solid #e0e0e0
 }
@@ -9,7 +9,8 @@ body > section {
 
 #templates,
 #newTemplate {
-    opacity: 0.6;
+    cursor: pointer;
+    z-index: 10;
     color: #666;
     padding: 0 10px 0 10px;
     margin: 0;
@@ -20,13 +21,14 @@ body > section {
     align-items: center;
     text-transform: uppercase;
     line-height: 48px;
+    margin-bottom: -2px;
 }
 
-#templates.selected,
-#newTemplate.selected {
-    border-bottom: 1px solid white;
-    color: #3f51b5;
-}
+/*#templates .-default,*/
+/*#newTemplate .-default {*/
+    /*border-bottom: 2px solid white;*/
+    /*color: #3f51b5;*/
+/*}*/
 
 #templates:after,
 #newTemplate:after {
@@ -34,4 +36,68 @@ body > section {
     content: '\d7';
     font-size: 20px;
     align-items: center;
+}
+
+.scroller {
+    display: none;
+}
+
+.scroller:target + .item {
+    display: block;
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    z-index: 2;
+}
+
+.scroller:target + .item.-default {
+    position: relative;
+}
+
+.item {
+    background-color: #ffffff;
+    color: #333333;
+    padding: 20px;
+    display: none;
+    max-height: 384px;
+    min-height: 1600px;
+}
+
+.content {
+    position: relative;
+}
+
+.content > .scroller {
+    display: none;
+}
+
+.content > .scroller:target + .item {
+    display: block;
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    z-index: 2;
+}
+
+.content > .scroller:target + .item.-default {
+    position: relative;
+}
+
+.content > .item {
+    background-color: #ffffff;
+    color: #333333;
+    padding: 20px;
+    display: none;
+    max-height: 384px;
+    overflow-y: auto;
+}
+
+.content > .item.-default {
+    width: 100%;
+    display: block;
+    z-index: 1;
 }
