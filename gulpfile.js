@@ -14,6 +14,7 @@ gulp.task('browser-sync', function() {
             baseDir: "./" // Change this to your web root dir
         }
     });
+    gulp.watch( "*/*.*").on('change', browserSync.reload);
 });
 
 // Default task to be run with `gulp`

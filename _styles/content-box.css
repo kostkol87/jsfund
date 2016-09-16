@@ -1,5 +1,33 @@
-#toolbar,
-body > section {
-    float: right;
-    margin-left: 214px;
+div {
+    border-bottom: 1px solid #616161;
+}
+
+div > #templates,
+div > #newTemplate {
+    float: left;
+    margin: 0;
+    height: 48px;
+    line-height: 48px;
+    text-align: center;
+    display: inline-block;
+    font-family: 'Oswald Regular', 'Myriad Pro', Arial, sans-serif;
+    font-size: 18px;
+    text-transform: uppercase;
+    color: #424242;
+    border: 1px solid #616161;
+}
+
+div > #templates.selected,
+div > #newTemplate.selected {
+    border-bottom: 1px solid #ffffff;
+    z-index: 10;
+}
+
+div > #templates:after,
+div > #newTemplate:after {
+    content: '\d7';
+    font-family: FontAwesome;
+    font-size: 30px;
+    padding: 0 10px 0 10px;
+    color: #616161;
 }

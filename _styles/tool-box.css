@@ -1,12 +1,12 @@
 #toolbox {
-    margin-left: 177px;
+    margin-left: 180px;
     height: 40px;
     padding-left: 0;
     background-color: #ededed;
+    min-width: 1200px;
 }
 
 #toolbox > ul {
-    height: 40px;
     margin: 0;
 }
 
@@ -15,15 +15,15 @@
     line-height: 40px;
     font-family: FontAwesome;
     font-size: 18px;
-    margin-right: 40px;
+    margin-right: 43px;
 }
 
 #toolbox > ul > li > ul {
-    margin-left: -3px;
+    margin-left: -5px;
     text-align: center;
     padding: 0;
     display: inline-block;
-    width: 40px;
+    width: 45px;
     border-right: 1px solid #d1d0d0;
 }
 
