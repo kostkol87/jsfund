@@ -1,33 +1,37 @@
-div {
-    border-bottom: 1px solid #616161;
+body > div {
+    display: flex;
+    border-bottom: 1px solid #e0e0e0
 }
 
-div > #templates,
-div > #newTemplate {
-    float: left;
+body > section {
+    margin-left: 214px;
+}
+
+#templates,
+#newTemplate {
+    opacity: 0.6;
+    color: #666;
+    padding: 0 10px 0 10px;
     margin: 0;
     height: 48px;
-    line-height: 48px;
-    text-align: center;
-    display: inline-block;
+    border: 1px solid #e0e0e0;
     font-family: 'Oswald Regular', 'Myriad Pro', Arial, sans-serif;
-    font-size: 18px;
+    font-size: 15px;
+    align-items: center;
     text-transform: uppercase;
-    color: #424242;
-    border: 1px solid #616161;
+    line-height: 48px;
 }
 
-div > #templates.selected,
-div > #newTemplate.selected {
-    border-bottom: 1px solid #ffffff;
-    z-index: 10;
+#templates.selected,
+#newTemplate.selected {
+    border-bottom: 1px solid white;
+    color: #3f51b5;
 }
 
-div > #templates:after,
-div > #newTemplate:after {
+#templates:after,
+#newTemplate:after {
+    padding: 10px;
     content: '\d7';
-    font-family: FontAwesome;
-    font-size: 30px;
-    padding: 0 10px 0 10px;
-    color: #616161;
+    font-size: 20px;
+    align-items: center;
 }
