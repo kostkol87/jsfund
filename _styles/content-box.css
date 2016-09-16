@@ -21,14 +21,19 @@ body > section {
     align-items: center;
     text-transform: uppercase;
     line-height: 48px;
-    margin-bottom: -2px;
+    margin-bottom: -1px;
 }
 
-/*#templates .-default,*/
-/*#newTemplate .-default {*/
-    /*border-bottom: 2px solid white;*/
-    /*color: #3f51b5;*/
-/*}*/
+.tabs-widget > div > #newTemplate:hover{
+    border-bottom: 2px solid white;
+    color: #3f51b5;
+}
+
+.tabs-widget > div > #templates:hover{
+    border-bottom: 1px solid white;
+    color: #3f51b5;
+}
+
 
 #templates:after,
 #newTemplate:after {
